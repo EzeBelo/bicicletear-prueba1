@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+/*     border: red dashed 1px; */
+}
+
+body {
+    background-color: gray;
+    font-family: "Poppins", sans-serif;
+}
+
+/*  HEADER y */
+
+header {
+    background-color: rgb(100, 96, 96);
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover{
+    color: rgb(189, 189, 189);
+}
+
+li{
+    list-style: none;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bike-logo {
+    width: 13rem;
+}
+
+.nav-menu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-menu-btn i {
+    font-size: 2.9rem;
+    background-color: brown;
+    padding: 5px 7px;
+    border-radius: 10px;
+}
+
+.nav-list {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;/* 
+    background-color: red; */
+}
+
+.nav-list li{
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.menu-toogle {
+    display: none;
+}
+
+.menu-toogle:checked + .nav-list {
+    display: block;
+}
+
+/*  Section 1 - Landing page */
+
+.title-landing{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-landing p {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+
+.bienvenidx-landing p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 1.5rem;
+}
+
+.landing-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.landing-buttons a{
+    background-color: #a52a2a;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0.5rem;
+
+}
+
+.image-landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-landing img {
+    width: 60%;
+}
+
+/* SECTION 2 - NUESTRA COMUNIDAD*/
+
+.section2-community {
+    background-color: rgb(80, 79, 79);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.com-title{
+    padding: 1.5rem;
+}
+
+.com-items {
+    padding: 0 2rem 1.5rem;
+    text-align: center;
+}
+
+.com-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.com-img img{
+    width: 80%;
+    border-radius: 30px;
+}
+
+/*  Seccion 3 Actividades */
+
+.act-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.act-title h3{
+    font-size:large;
+    text-align: center;
+}
+
+.act-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.act-card{
+    text-align: center;
+    padding: 1rem;
+}
+
+.act-card img {
+    width: 70vw;
+    border-radius: 1.5rem;
+}
