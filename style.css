@@ -18,11 +18,14 @@
     --poppins: "Poppins"
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--gris1);
     font-family: "Poppins", sans-serif;
     color: azure;
-
 }
 
 /*  HEADER y */
@@ -35,7 +38,7 @@ header {
 
 a {
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
 }
 
 a:hover{
@@ -51,7 +54,7 @@ li{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .nav-logo {
@@ -102,6 +105,13 @@ li{
 
 /*  Section 1 - Landing page */
 
+.section1-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section1-landing{
     padding-top: 6rem;
     background: rgb(66,0,57);
@@ -119,10 +129,12 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .description-landing p {
     text-align: center;
     margin: 0 2rem;
+    max-width: 500px;
 }
 
 
@@ -153,10 +165,12 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .image-landing img {
     width: 60%;
+    max-width: 400px;
 }
 
 
@@ -181,16 +195,22 @@ li{
     text-align: center;
 }
 
+.com-items p{
+    max-width: 500px;
+}
+
 .com-img{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+
 }
 
 .com-img img{
     width: 70%;
     border-radius: 30px;
+    max-width: 400px;
 }
 
 /*  Seccion 3 Actividades */
@@ -210,6 +230,7 @@ li{
 .act-title h3{
     font-size:large;
     text-align: center;
+    max-width: 450px;
 }
 
 .act-cards{
@@ -226,6 +247,7 @@ li{
 
 .act-card img {
     width: 70vw;
+    max-width: 450px;
     border-radius: 1.5rem;
 }
 
@@ -282,6 +304,10 @@ li{
 }
 
 .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
 
@@ -293,17 +319,23 @@ li{
     background-color: var(--darkred);
     border-radius: 15px;
     width: 70%;
+    max-width: 250px;
+}
+
+.sede-contact{
+    max-width: 500px;
+    margin: 0 6rem;
 }
 
 .contact-cards {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.contact-card li{
+.contact-card- li{
     padding: 0.5rem;
 }
 
