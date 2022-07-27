@@ -4,20 +4,33 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-    
+    box-sizing: 0;  
 /*     border: red dashed 1px; */
 }
 
+:root {
+    --gris1: #808080;
+    --gris2: #646060;
+    --darkpurple: #420039;
+    --russianviolet: #23022e;
+    --green: #35ac43;
+    --darkred: #a52a2a;
+    --poppins: "Poppins"
+}
+
 body {
-    background-color: gray;
+    background-color: var(--gris1);
     font-family: "Poppins", sans-serif;
+    color: azure;
+
 }
 
 /*  HEADER y */
 
 header {
-    background-color: rgb(100, 96, 96);
+    position: fixed;
+    top: 0%;
+    width: 100%;
 }
 
 a {
@@ -34,6 +47,7 @@ li{
 }
 
 .nav-container{
+    background-color: var(--darkpurple);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -54,12 +68,12 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .nav-menu-btn i {
     font-size: 2.9rem;
-    background-color: brown;
+    background-color: white;
+    color: var(--russianviolet);
     padding: 5px 7px;
     border-radius: 10px;
 }
@@ -69,8 +83,8 @@ li{
     width: 100%;
     display: flex;
     flex-direction: column;
-    display: none;/* 
-    background-color: red; */
+    display: none;
+/*     background-color: red; */
 }
 
 .nav-list li{
@@ -87,6 +101,12 @@ li{
 }
 
 /*  Section 1 - Landing page */
+
+.section1-landing{
+    padding-top: 6rem;
+    background: rgb(66,0,57);
+    background: linear-gradient(180deg, rgba(66,0,57,1) 5%, rgba(128,128,128,1) 100%);
+}
 
 .title-landing{
     padding: 2rem;
@@ -139,10 +159,12 @@ li{
     width: 60%;
 }
 
+
 /* SECTION 2 - NUESTRA COMUNIDAD*/
 
 .section2-community {
-    background-color: rgb(80, 79, 79);
+    background: rgb(128,128,128);
+    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(66,0,57,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,6 +173,7 @@ li{
 
 .com-title{
     padding: 1.5rem;
+    text-align: center;
 }
 
 .com-items {
@@ -166,11 +189,16 @@ li{
 }
 
 .com-img img{
-    width: 80%;
+    width: 70%;
     border-radius: 30px;
 }
 
 /*  Seccion 3 Actividades */
+
+.section3 {
+    background: rgb(128,128,128);
+    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(66,0,57,1) 100%);
+}
 
 .act-title {
     display: flex;
@@ -199,4 +227,227 @@ li{
 .act-card img {
     width: 70vw;
     border-radius: 1.5rem;
+}
+
+/* Seccion 4 Etica */
+
+.section4{
+    background: rgb(128,128,128);
+    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(66,0,57,1) 100%);
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.section4-container {/* 
+    background-color: aquamarine; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etics-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etics-card{padding: 2rem;
+}
+
+
+.etics-card i{
+    font-size: 5rem;
+    padding: 0.5rem;
+}
+
+/* Seccion 5 - Contacto */
+
+.section5-contact{
+    background: rgb(128,128,128);
+    background: linear-gradient(0deg, rgba(128,128,128,1) 0%, rgba(66,0,57,1) 100%);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    padding: 2rem 0 1rem;
+}
+
+.contact-info {
+    text-align: center;
+    width: 100%;
+
+}
+
+.contact-card {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--darkred);
+    border-radius: 15px;
+    width: 70%;
+}
+
+.contact-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card li{
+    padding: 0.5rem;
+}
+
+.contact-card iframe{
+    margin: 1rem 0 0 0;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contact-social-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact-social-items a {
+    font-size: 3rem;
+    color: var(--russianviolet);
+    padding: 0 1rem;
+}
+
+/*  Footer */
+
+.footer-container {
+    background-color: var(--darkpurple);
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*         * Login Page         */
+
+.header-login{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkpurple);
+}
+
+
+.login {
+    background: rgb(128,128,128);
+    background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(66,0,57,1) 100%);
+    display: flex;
+    justify-content: center;
+    height: 100vh
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.login-user, .login-pass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.login-pass input, .login-user input{
+    font-family: var(--poppins);
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.login-pass-forg{
+    margin: 0 0.8rem;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.enter-button{
+    background-color: var(--darkred);
+    padding: 0.4rem 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: var(--poppins);
+}
+
+.login-return-home{
+    padding: 3rem;
+}
+
+.login-new-user{
+    padding: 1rem;
+}
+
+/*       * Crear usuario         */
+
+.header-new-user{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkpurple);
+}
+
+.main-new-user{
+    background: rgb(128,128,128);
+    background: linear-gradient(180deg, rgba(128,128,128,1) 0%, rgba(66,0,57,1) 100%);
+}
+
+.new-user-container, .new-user-info, .form-new-user, .new-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.new-user input{
+    border: none;
+    margin: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    font-family: var(--poppins);
+}
+
+.create-new-user{
+    background-color: var(--darkred);
+    padding: 0.4rem 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: var(--poppins);
+}
+
+.main-page{/* 
+    border: red 1px dashed; */
+    margin: 1rem 2rem 2rem;
 }

@@ -17,7 +17,7 @@
                 <div class="nav-logo">
                     <img src="/Src/topnav.png" alt="top-logo" class="bike-logo">
                 </div>
-                <label for="menu-toogle" class="nav-menu-btn">
+                <label for="menu-toogle" class="nav-menu-btn index">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 <input type="checkbox" id="menu-toogle" class="menu-toogle">
@@ -25,7 +25,7 @@
                     <li><a href="#landing">Inicio</a></li>
                     <li><a href="#about">¿Quiénes somos?</a></li>
                     <li><a href="#activities">Actividades</a></li>
-                    <li><a href="#politics">Ética</a></li>
+                    <li><a href="#etics">Ética</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </div>
             </ul>
@@ -34,60 +34,159 @@
     <!-- Section 1 Landing page -->
     <main>
         <section class="section1-landing" id="landing">
-            <div class="title-landing">
-                <h1>¿Vamos a pedalear?</h1>
-            </div>
-            <div class="description-landing">
-                <p>¿Buscabas un lugar donde encontrarte con gente que comparta tus ganas de salir a andar en bici, pasear, y pasar un buen rato? Este es tu lugar.</p>
-            </div>
-            <div class="image-landing">
-                <img src="/Src/logo.png" alt="fixie">
-            </div>
-            <div class="bienvenidx-landing">
-                <p>Bienvenidx a Bicicletear</p>
-            </div>
-            <div class="landing-buttons">
-                <a href="#">Ingresar</a>
-                <a href="#">Crear una cuenta</a>
+            <div class="section1-container">
+                <div class="title-landing" >
+                    <h1>¿Vamos a pedalear?</h1>
+                </div>
+                <div class="description-landing">
+                    <p>¿Buscabas un lugar donde encontrarte con gente que comparta tus ganas de salir a andar en bici, pasear, y pasar un buen rato? Este es tu lugar.</p>
+                </div>
+                <div class="image-landing">
+                    <img src="/Src/logo.png" alt="fixie">
+                </div>
+                <div class="bienvenidx-landing">
+                    <p>Bienvenidx a Bicicletear</p>
+                </div>
+                <div class="landing-buttons">
+                    <a href="/log-in.html">Ingresar</a>
+                    <a href="/new-user.html">Crear una cuenta</a>
+                </div>
             </div>
         </section>
         <!-- Section 2 - Nuestra Comunidad -->
         <section class="section2-community" id="about">
-            <div class="com-title">
-                <h2>¿Quiénes somos?</h2>
-            </div>
-            <div class="com-items">
-                <p>Somos Bicletear, una comunidad autogestiva de entusiastas amantes de las bicicletas y de su uso recreativo</p>
-            </div>
-            <div class="com-img">
-                <img src="/Src/consejos-de-ciclismo-urbano.png" alt="com-img">
+            <div class="section2-container">
+                <div class="com-title">
+                    <h2>¿Quiénes somos?</h2>
+                </div>
+                <div class="com-items">
+                    <p>Somos Bicletear, una comunidad autogestiva de entusiastas amantes de las bicicletas y de su uso recreativo</p>
+                </div>
+                <div class="com-img">
+                    <img src="/Src/consejos-de-ciclismo-urbano.png" alt="com-img">
+                </div>
             </div>
         </section>
         <!-- Section 3 Actividades -->
         <section class="section3" id="activities">
-            <div class="act-title">
-                <h3>Realizamos muchas actividades en las diferentes ciudades donde tenemos miembros</h3>
+            <div class="section3-container">
+                <div class="act-title">
+                    <h3>Realizamos muchas actividades en las diferentes ciudades donde tenemos miembros</h3>
+                </div>
+                <div class="act-cards">
+                    <div class="act-card 1">
+                        <img src="/Src/act1.png" alt="act1">
+                        <p>Salidas y paseos</p>
+                    </div>
+                    <div class="act-card 2">
+                        <img src="/Src/act2.png" alt="act2">
+                        <p>Competencias</p>
+                    </div>
+                    <div class="act-card 3">
+                        <img src="/Src/act3.png" alt="act3">
+                        <p>Ciclismo de montaña y Off-Road</p>
+                    </div>
+                    <div class="act-card 4">
+                        <img src="/Src/act4.png" alt="act4">
+                        <p>Talleres y cursos</p>
+                    </div>
+                </div>
             </div>
-            <div class="act-cards">
-                <div class="act-card 1">
-                    <img src="/Src/act1.png" alt="act1">
-                    <p>Salidas y paseos</p>
+            </section>
+        <!-- Seccion 4 Etica -->
+        <section class="section4" id="etics">
+            <div class="section4-container">
+                <div class="etics-title">
+                    <h3>Ética del Grupo</h3>
                 </div>
-                <div class="act-card 2">
-                    <img src="/Src/act2.png" alt="act2">
-                    <p>Competencias</p>
-                </div>
-                <div class="act-card 3">
-                    <img src="/Src/act3.png" alt="act3">
-                    <p>Ciclismo de montaña y Off-Road</p>
-                </div>
-                <div class="act-card 4">
-                    <img src="/Src/act4.png" alt="act4">
-                    <p>Talleres y cursos</p>
+                <div class="etics-card-container">
+                    <div class="etics-card 1">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                        <p>Respeto y tolerancia para lxs demas</p>
+                    </div>
+                    <div class="etics-card 2">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Apoyo mutuo y buena onda en las actividades, encuentros y demas</p>
+                    </div>
+                    <div class="etics-card 3">
+                        <i class="fa-solid fa-ban"></i>
+                        <p>No se aceptara ningun tipo de violencia</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Seccion 5 Contacto -->
+        <section class="section5-contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-title">
+                    <h2>Contacte con nosotros</h2>
+                </div>
+            <div class="contact-info">
+                <div class="contact-cards">
+                  <div class="contact-card 1">
+                    <h3>Ezequiel Coordinador</h3>
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>ezebelo@gmail.com</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>342-48567414</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contact-card 2">
+                    <h3>Javier Coordinador</h3>
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>coordinar@mail.com</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>342-15498965</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="contact-card 3">
+                    <h3>Sede De Bicicletear</h3>
+                    <ul>
+                      <li>
+                        <p><b>Horario de atencion:</b></p>
+                        <p>9hs a 15hs</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>bicicletear@mail.com</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>478-54854</p>
+                      </li>
+                      <li>
+                        <p><b>Direccion:</b></p>
+                        <p>Gral Lopez y San Jeronimo</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.1605911480888!2d-60.710947700000006!3d-31.656825899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9a817f6fda5%3A0x66f65827edd37ba6!2sAvenida%20General%20L%C3%B3pez%20%26%20San%20Jer%C3%B3nimo%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1658852376768!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="contact-social-items">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                </div>
+              </div>
+            </div>
+          </section>
     </main>
-
+    <footer>
+        <div class="footer-container">
+            <p>Bicicletear</p>
+            <p>Copyright 2022</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
